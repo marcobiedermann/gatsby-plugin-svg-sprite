@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/marcobiedermann/gatsby-plugin-svg-sprite/issues"
   },
-  "homepage": "https://github.com/marcobiedermann/gatsby-plugin-svg-sprite#readme"
+  "homepage": "https://github.com/marcobiedermann/gatsby-plugin-svg-sprite#readme",
+  "dependencies": {
+    "svg-sprite-loader": "^3.6.2"
+  }
 }
