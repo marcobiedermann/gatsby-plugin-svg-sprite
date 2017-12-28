@@ -23,6 +23,18 @@ module.exports = {
 };
 ```
 
+## Usage
+
+```js
+import twitterIcon from './path/to/twitter.svg';
+
+const Icon = () => (
+  <svg>
+    <use xlinkHref={`#${twitterIcon.id}`} />
+  </svg>
+);
+```
+
 ## License
 
 [MIT License](LICENSE)
