@@ -5,6 +5,12 @@
 
 [svg-sprite](https://github.com/kisenka/svg-sprite-loader) plugin for Gatsby
 
+## Table of contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+
 ## Installation
 
 Install `gatsby-plugin-svg-sprite` via npm.
