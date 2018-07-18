@@ -1,16 +1,26 @@
-exports.onCreateWebpackConfig = ({ actions, loaders }, options = {}) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }, options = {}) => {
+  const prevConfig = getConfig()
+
+  actions.replaceWebpackConfig({
+    ...prevConfig,
     module: {
+      ...prevConfig.module,
       rules: [
-        {
-          test: /\.(jpg|jpeg|png|gif|mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
-          use: [
-            loaders.url({
-              limit: 10000,
-              name: 'static/[name].[hash:8].[ext]',
-            }),
-          ],
-        },
+        ...prevConfig.module.rules.map(item => {
+          const { test } = item
+
+          if (
+            test &&
+            test.toString() === '/\\.(ico|svg|jpg|jpeg|png|gif|webp)(\\?.*)?$/'
+          ) {
+            return {
+              ...item,
+              test: /\.(ico|jpg|jpeg|png|gif|webp)(\?.*)?$/,
+            }
+          }
+
+          return { ...item }
+        }),
         {
           test: /\.svg$/,
           use: [
@@ -20,7 +30,7 @@ exports.onCreateWebpackConfig = ({ actions, loaders }, options = {}) => {
             },
           ],
         },
-      ]
-    }
-  });
-};
+      ],
+    },
+  })
+}
