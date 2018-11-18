@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-svg-sprite",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "svg-sprite plugin for Gatsby",
   "main": "index.js",
   "scripts": {
