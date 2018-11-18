@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/marcobiedermann/gatsby-plugin-svg-sprite.git"
   },
-  "keywords": ["gatsby-plugin", "gatsby", "svg", "sprite"],
+  "keywords": [
+    "gatsby-plugin",
+    "gatsby",
+    "svg",
+    "sprite"
+  ],
   "author": "Marco Biedermann",
   "license": "MIT",
   "bugs": {
@@ -18,6 +23,6 @@
   },
   "homepage": "https://github.com/marcobiedermann/gatsby-plugin-svg-sprite#readme",
   "dependencies": {
-    "svg-sprite-loader": "^3.6.2"
+    "svg-sprite-loader": "^4.1.3"
   }
 }
