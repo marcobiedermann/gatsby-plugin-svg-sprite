@@ -1,4 +1,7 @@
-exports.onCreateWebpackConfig = ({ actions, loaders, getConfig }, options = {}) => {
+exports.onCreateWebpackConfig = (
+  { actions, loaders, getConfig },
+  options = {}
+) => {
   const prevConfig = getConfig()
 
   actions.replaceWebpackConfig({
