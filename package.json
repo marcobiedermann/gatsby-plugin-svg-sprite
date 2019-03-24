@@ -27,6 +27,6 @@
     "svg-sprite-loader": "^4.1.3"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "prettier": "^1.16.4"
   }
 }
