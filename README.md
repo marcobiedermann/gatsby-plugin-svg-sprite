@@ -1,6 +1,7 @@
 # gatsby-plugin-svg-sprite
 
 [![npm version](https://badge.fury.io/js/gatsby-plugin-svg-sprite.svg)](https://badge.fury.io/js/gatsby-plugin-svg-sprite)
+[![Build Status](https://travis-ci.org/marcobiedermann/gatsby-plugin-svg-sprite.svg?branch=master)](https://travis-ci.org/marcobiedermann/gatsby-plugin-svg-sprite)
 [![dependencies Status](https://david-dm.org/marcobiedermann/gatsby-plugin-svg-sprite/status.svg)](https://david-dm.org/marcobiedermann/gatsby-plugin-svg-sprite)
 [![devDependencies Status](https://david-dm.org/marcobiedermann/gatsby-plugin-svg-sprite/dev-status.svg)](https://david-dm.org/marcobiedermann/gatsby-plugin-svg-sprite?type=dev)
 
